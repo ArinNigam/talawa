@@ -62,7 +62,13 @@ class _PinnedPostScreenState extends State<PinnedPostScreen> {
               cacheManager: widget.cacheManager,
               imageUrl: widget.post['imageUrl']!,
               errorWidget: (context, url, error) {
-                return const CircularProgressIndicator();
+                return Center(
+                  child: Container(
+                    constraints:
+                        BoxConstraints.tightFor(width: 50.0, height: 50.0),
+                    child: const CircularProgressIndicator(),
+                  ),
+                );
               },
               height: SizeConfig.screenHeight! * .75,
               fit: BoxFit.cover,
