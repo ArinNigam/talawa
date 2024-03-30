@@ -10,7 +10,6 @@ import 'package:talawa/services/size_config.dart';
 class Message extends StatelessWidget {
   const Message({super.key, required this.message});
 
-  /// The chat message that this widget represents.
   final ChatMessage message;
 
   @override
