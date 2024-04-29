@@ -4179,7 +4179,7 @@ class MockImagePicker extends _i2.Mock implements _i13.ImagePicker {
     int? imageQuality,
     _i13.CameraDevice? preferredCameraDevice = _i13.CameraDevice.rear,
     bool? requestFullMetadata = true,
-    int? limit
+    int? limit,
   }) =>
       (super.noSuchMethod(
         Invocation.method(
