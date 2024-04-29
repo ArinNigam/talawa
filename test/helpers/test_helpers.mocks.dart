@@ -4179,7 +4179,6 @@ class MockImagePicker extends _i2.Mock implements _i13.ImagePicker {
     int? imageQuality,
     _i13.CameraDevice? preferredCameraDevice = _i13.CameraDevice.rear,
     bool? requestFullMetadata = true,
-    int? limit,
   }) =>
       (super.noSuchMethod(
         Invocation.method(
@@ -4192,7 +4191,6 @@ class MockImagePicker extends _i2.Mock implements _i13.ImagePicker {
             #imageQuality: imageQuality,
             #preferredCameraDevice: preferredCameraDevice,
             #requestFullMetadata: requestFullMetadata,
-            #limit: limit,
           },
         ),
         returnValue: _i5.Future<_i13.XFile?>.value(),
@@ -4205,6 +4203,7 @@ class MockImagePicker extends _i2.Mock implements _i13.ImagePicker {
     double? maxHeight,
     int? imageQuality,
     bool? requestFullMetadata = true,
+    int? limit,
   }) =>
       (super.noSuchMethod(
         Invocation.method(
@@ -4215,6 +4214,7 @@ class MockImagePicker extends _i2.Mock implements _i13.ImagePicker {
             #maxHeight: maxHeight,
             #imageQuality: imageQuality,
             #requestFullMetadata: requestFullMetadata,
+            #limit: limit,
           },
         ),
         returnValue: _i5.Future<List<_i13.XFile>>.value(<_i13.XFile>[]),
